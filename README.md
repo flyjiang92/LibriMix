@@ -11,7 +11,7 @@ To generate LibriMix, clone the repo and run the main script :
 ```
 git clone https://github.com/flyjiang92/LibriMix
 cd LibriMix 
-./generate_librimix.sh storage_dir
+bash generate_librimix.sh storage_dir
 ```
 You can either change `storage_dir` and `n_src` by hand in 
 the script or use the command line.  
