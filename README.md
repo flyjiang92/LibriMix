@@ -9,7 +9,7 @@ To generate LibriMix, clone the repo and run the main script :
 [`generate_librimix.sh`](./generate_librimix.sh)
 
 ```
-git clone https://github.com/JorisCos/LibriMix
+git clone https://github.com/flyjiang92/LibriMix
 cd LibriMix 
 ./generate_librimix.sh storage_dir
 ```
