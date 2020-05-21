@@ -4,18 +4,22 @@ set -e  # Exit on error
 storage_dir=$1
 
 echo "Extract LibiSpeech/dev-clean into $storage_dir"
+chmod r+x $storage_dir/dev-clean.tar.gz
 tar -xzf $storage_dir/dev-clean.tar.gz -C $storage_dir
 rm -rf $storage_dir/dev-clean.tar.gz
 
 echo "Extract LibiSpeech/test-clean into $storage_dir"
+chmod r+x $storage_dir/test-clean.tar.gz
 tar -xzf $storage_dir/test-clean.tar.gz -C $storage_dir
 rm -rf $storage_dir/test-clean.tar.gz
 
 echo "Extract LibiSpeech/train-clean-100 into $storage_dir"
+chmod r+x $storage_dir/train-clean-100.tar.gz
 tar -xzf $storage_dir/train-clean-100.tar.gz -C $storage_dir
 rm -rf $storage_dir/train-clean-100.tar.gz
 
 echo "Extract LibiSpeech/train-clean-360 into $storage_dir"
+chmod r+x $storage_dir/train-clean-360.tar.gz
 tar -xzf $storage_dir/train-clean-360.tar.gz -C $storage_dir
 rm -rf $storage_dir/train-clean-360.tar.gz
 
