@@ -3,27 +3,19 @@ set -e  # Exit on error
 
 storage_dir=$1
 
-echo "Download LibiSpeech/dev-clean into $storage_dir"
-# If downloading stalls for more than 20s, relaunch from previous state.
-wget -c --tries=0 --read-timeout=20 http://www.openslr.org/resources/12/dev-clean.tar.gz -P $storage_dir
+echo "Extract LibiSpeech/dev-clean into $storage_dir"
 tar -xzf $storage_dir/dev-clean.tar.gz -C $storage_dir
 rm -rf $storage_dir/dev-clean.tar.gz
 
-echo "Download LibiSpeech/test-clean into $storage_dir"
-# If downloading stalls for more than 20s, relaunch from previous state.
-wget -c --tries=0 --read-timeout=20 http://www.openslr.org/resources/12/test-clean.tar.gz -P $storage_dir
+echo "Extract LibiSpeech/test-clean into $storage_dir"
 tar -xzf $storage_dir/test-clean.tar.gz -C $storage_dir
 rm -rf $storage_dir/test-clean.tar.gz
 
-echo "Download LibiSpeech/train-clean-100 into $storage_dir"
-# If downloading stalls for more than 20s, relaunch from previous state.
-wget -c --tries=0 --read-timeout=20 http://www.openslr.org/resources/12/train-clean-100.tar.gz -P $storage_dir
+echo "Extract LibiSpeech/train-clean-100 into $storage_dir"
 tar -xzf $storage_dir/train-clean-100.tar.gz -C $storage_dir
 rm -rf $storage_dir/train-clean-100.tar.gz
 
-echo "Download LibiSpeech/train-clean-360 into $storage_dir"
-# If downloading stalls for more than 20s, relaunch from previous state.
-wget -c --tries=0 --read-timeout=20 http://www.openslr.org/resources/12/train-clean-360.tar.gz -P $storage_dir
+echo "Extract LibiSpeech/train-clean-360 into $storage_dir"
 tar -xzf $storage_dir/train-clean-360.tar.gz -C $storage_dir
 rm -rf $storage_dir/train-clean-360.tar.gz
 
